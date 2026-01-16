@@ -96,7 +96,7 @@ import pygame
 import numpy as np
 
 from camera import Camera
-from cube import Cube
+from shapes import Cube
 from rotations import *
 
 pygame.init()
