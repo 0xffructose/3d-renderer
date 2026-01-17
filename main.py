@@ -82,6 +82,11 @@ while RUNNING:
             elif event.key == pygame.K_s:
                 CAMERA.rot[1] += .3
 
+            elif event.key == pygame.K_SPACE:
+                CAMERA.pos[1] -= .3
+            elif event.key == pygame.K_LSHIFT:
+                CAMERA.pos[1] += .3
+
     SCREEN.fill("black")
 
     if (CAMERA.prev_pos != CAMERA.pos) or (CAMERA.prev_rot != CAMERA.rot):
